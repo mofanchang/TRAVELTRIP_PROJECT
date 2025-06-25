@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}旅遊網站{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 聊天元件 CSS (若有) -->
+    <link rel="stylesheet" href="{% static 'frontend/css/main.e6c13ad2.css' %}">
+    <style>
+      /* 現有樣式保持 */
+      #chat-root {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 8px;
+      }
+
+      #chat-root.chat-expanded {
+        background-color: white;
+        width: 300px;
+        height: 400px;
+      }
+
+      #chat-root.chat-collapsed {
+        background-color: transparent;
+        box-shadow: none;
+        width: auto;
+        height: auto;
+      }
+
+      body, main, .container {
+        min-width: 0;
+        width: 100%;
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          padding: 0 10px;
+          max-width: 100%;
+        }
+        nav {
+          padding: 1rem;
+        }
+        .grid-cols-4, .grid-cols-3 {
+          grid-template-columns: 1fr !important;
+        }
+      }
+
+      /* 確保輸入框可互動 */
+      input[type="text"], input[type="date"] {
+        pointer-events: auto !important;
+        opacity: 1 !important;
+        cursor: text;
+      }
+</style>
+
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between">
+            <a href="/" class="font-bold text-xl">旅遊網站</a>
+            <div>
+                <a href="/accounts/profile/" class="mr-4 hover:underline">個人資料</a>
+                <a href="/accounts/login/" class="mr-4 hover:underline">登入</a>
+                <a href="/accounts/logout/" class="hover:underline">登出</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container mx-auto mt-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- 聊天元件掛載點 -->
+    <div id="chat-root"></div>
+
+    <!-- React JS -->
+    <script src="{% static 'frontend/js/main.853f6470.js' %}"></script>
+</body>
+</html>

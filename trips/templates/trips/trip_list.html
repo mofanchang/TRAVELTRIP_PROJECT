@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}行程列表{% endblock %}
+{% block content %}
+<h2 class="text-2xl font-bold mb-4">所有行程</h2>
+<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% for trip in trips %}
+    <li class="bg-white rounded shadow p-4">
+        <h3 class="text-xl font-semibold mb-2">
+            <a href="{% url 'trip_detail' trip.pk %}" class="text-blue-600 hover:underline">{{ trip.name }}</a>
+        </h3>
+        <p class="mb-2 text-gray-700">{{ trip.description|truncatechars:50 }}</p>
+        <p class="mb-2">價格：<span class="font-bold">${{ trip.price }}</span></p>
+        <a href="{% url 'trip_detail' trip.pk %}" class="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">查看詳情</a>
+    </li>
+    {% empty %}
+    <li>目前沒有行程。</li>
+    {% endfor %}
+</ul>
+{% endblock %}

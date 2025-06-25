@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}購物車{% endblock %}
+{% block content %}
+<h2 class="text-2xl font-bold mb-4">購物車</h2>
+
+{% if trips %}
+<ul>
+    {% for trip in trips %}
+        <li class="mb-2">
+            <strong>{{ trip.name }}</strong> - ${{ trip.price }}
+            <form action="{% url 'remove_from_cart' trip.id %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit" class="text-red-500">刪除</button>
+            </form>
+        </li>
+    {% endfor %}
+</ul>
+
+<div class="mt-6 space-x-4">
+    <a href="{% url 'bookings:checkout' %}" class="bg-blue-500 text-white px-4 py-2 rounded">結帳</a>
+    
+    <form action="{% url 'clear_cart' %}" method="post" style="display:inline;">
+        {% csrf_token %}
+        <button type="submit" class="bg-gray-500 text-white px-4 py-2 rounded">清空購物車</button>
+    </form>
+</div>
+
+{% else %}
+<p>購物車是空的。</p>
+{% endif %}
+{% endblock %}

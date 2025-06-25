@@ -1,0 +1,28 @@
+
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: traveltrip_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: yourpassword
+
+    volumes:
+      - traveltrip_postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: always
+
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://traveltrip_user:traveltrip_pass@db:5432/traveltrip_db
+      - DEBUG=True
+
+volumes:
+  traveltrip_postgres_data:
