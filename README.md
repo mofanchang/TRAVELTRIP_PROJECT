@@ -1,7 +1,7 @@
 # TravelTrip - AI-Powered Travel E-commerce Platform 🌍✈️
 
 An intelligent travel booking platform that combines modern web technologies with AI-powered recommendations to provide personalized travel experiences.
-
+corrected-architecture.svg
 ## 🚀 Features
 
 - **AI-Powered Chatbot**: Intelligent travel assistant with RAG (Retrieval-Augmented Generation) system
