@@ -1,7 +1,7 @@
 # TravelTrip - AI-Powered Travel E-commerce Platform 🌍✈️
 
 An intelligent travel booking platform that combines modern web technologies with AI-powered recommendations to provide personalized travel experiences.
-![系統架構圖](corrected-architecture.svg)
+
 
 ## 🚀 Features
 
@@ -10,8 +10,7 @@ An intelligent travel booking platform that combines modern web technologies wit
 - **Real-time Booking System**: Seamless reservation management for hotels, flights, and activities
 
 ## 🏗️ Architecture
-
-![TravelTrip Architecture](docs/architecture-diagram.svg)
+![系統架構圖](corrected-architecture.svg)
 
 ### Tech Stack
 
