@@ -1,0 +1,185 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">
+    TravelTrip Travel E-commerce Platform Architecture
+  </text>
+  
+  <!-- Frontend Layer -->
+  <g id="frontend-layer">
+    <rect x="50" y="80" width="350" height="200" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2" rx="10"/>
+    <text x="225" y="100" text-anchor="middle" font-size="16" font-weight="bold">Frontend Layer (React)</text>
+    
+    <rect x="80" y="120" width="100" height="50" fill="#e1f5fe" stroke="#01579b" rx="5"/>
+    <text x="130" y="140" text-anchor="middle" font-size="12">React App</text>
+    <text x="130" y="155" text-anchor="middle" font-size="10">(src/)</text>
+    
+    <rect x="200" y="120" width="120" height="50" fill="#e1f5fe" stroke="#01579b" rx="5"/>
+    <text x="260" y="140" text-anchor="middle" font-size="12">App.js</text>
+    <text x="260" y="155" text-anchor="middle" font-size="10">Main Component</text>
+    
+    <rect x="80" y="190" width="120" height="50" fill="#fff3e0" stroke="#f57c00" rx="5"/>
+    <text x="140" y="210" text-anchor="middle" font-size="12" font-weight="bold">ChatWidget.js</text>
+    <text x="140" y="225" text-anchor="middle" font-size="10">AI Chatbot UI</text>
+    
+    <rect x="220" y="190" width="120" height="50" fill="#e1f5fe" stroke="#01579b" rx="5"/>
+    <text x="280" y="210" text-anchor="middle" font-size="12">Styling</text>
+    <text x="280" y="225" text-anchor="middle" font-size="10">App.css / index.css</text>
+  </g>
+  
+  <!-- API Gateway -->
+  <g id="api-gateway">
+    <rect x="500" y="150" width="150" height="60" fill="#ffe0b2" stroke="#ff8f00" stroke-width="2" rx="10"/>
+    <text x="575" y="175" text-anchor="middle" font-size="14" font-weight="bold">API Gateway</text>
+    <text x="575" y="195" text-anchor="middle" font-size="12">Django REST Framework</text>
+  </g>
+  
+  <!-- Django Backend -->
+  <g id="backend-layer">
+    <rect x="750" y="80" width="400" height="280" fill="#f8cecc" stroke="#b85450" stroke-width="2" rx="10"/>
+    <text x="950" y="100" text-anchor="middle" font-size="16" font-weight="bold">Django Backend Applications</text>
+    
+    <rect x="780" y="120" width="140" height="50" fill="#f3e5f5" stroke="#9c27b0" rx="5"/>
+    <text x="850" y="140" text-anchor="middle" font-size="12">TRAVELTRIP_PROJECT</text>
+    <text x="850" y="155" text-anchor="middle" font-size="10">Main Project Settings</text>
+    
+    <rect x="780" y="190" width="80" height="40" fill="#f3e5f5" stroke="#9c27b0" rx="5"/>
+    <text x="820" y="205" text-anchor="middle" font-size="11">accounts</text>
+    <text x="820" y="220" text-anchor="middle" font-size="9">User Mgmt</text>
+    
+    <rect x="880" y="190" width="80" height="40" fill="#f3e5f5" stroke="#9c27b0" rx="5"/>
+    <text x="920" y="205" text-anchor="middle" font-size="11">bookings</text>
+    <text x="920" y="220" text-anchor="middle" font-size="9">Reservations</text>
+    
+    <rect x="980" y="190" width="80" height="40" fill="#f3e5f5" stroke="#9c27b0" rx="5"/>
+    <text x="1020" y="205" text-anchor="middle" font-size="11">cart</text>
+    <text x="1020" y="220" text-anchor="middle" font-size="9">Shopping Cart</text>
+    
+    <rect x="780" y="250" width="90" height="40" fill="#fff3e0" stroke="#f57c00" rx="5"/>
+    <text x="825" y="265" text-anchor="middle" font-size="11" font-weight="bold">chatbot</text>
+    <text x="825" y="280" text-anchor="middle" font-size="9">AI Backend Logic</text>
+    
+    <rect x="890" y="250" width="80" height="40" fill="#f3e5f5" stroke="#9c27b0" rx="5"/>
+    <text x="930" y="265" text-anchor="middle" font-size="11">trips</text>
+    <text x="930" y="280" text-anchor="middle" font-size="9">Travel Products</text>
+    
+    <rect x="990" y="250" width="80" height="40" fill="#f3e5f5" stroke="#9c27b0" rx="5"/>
+    <text x="1030" y="265" text-anchor="middle" font-size="11">media</text>
+    <text x="1030" y="280" text-anchor="middle" font-size="9">Media Files</text>
+    
+    <rect x="780" y="310" width="80" height="40" fill="#f3e5f5" stroke="#9c27b0" rx="5"/>
+    <text x="820" y="325" text-anchor="middle" font-size="11">static</text>
+    <text x="820" y="340" text-anchor="middle" font-size="9">Static Files</text>
+  </g>
+  
+  <!-- Database Layer -->
+  <g id="database-layer">
+    <rect x="750" y="420" width="250" height="150" fill="#d5e8d4" stroke="#82b366" stroke-width="2" rx="10"/>
+    <text x="875" y="440" text-anchor="middle" font-size="16" font-weight="bold">Database Layer</text>
+    
+    <ellipse cx="820" cy="500" rx="50" ry="30" fill="#e8f5e8" stroke="#2e7d32"/>
+    <text x="820" y="495" text-anchor="middle" font-size="12" font-weight="bold">PostgreSQL</text>
+    <text x="820" y="510" text-anchor="middle" font-size="10">traveltrip_db</text>
+    
+    <rect x="890" y="470" width="100" height="30" fill="#e8f5e8" stroke="#2e7d32" rx="5"/>
+    <text x="940" y="485" text-anchor="middle" font-size="10">Database Server</text>
+    
+    <rect x="890" y="510" width="100" height="40" fill="#e8f5e8" stroke="#2e7d32" rx="5"/>
+    <text x="940" y="525" text-anchor="middle" font-size="10">Users, Orders</text>
+    <text x="940" y="540" text-anchor="middle" font-size="10">Products, Chat Logs</text>
+  </g>
+  
+  <!-- AI System -->
+  <g id="ai-system">
+    <rect x="50" y="350" width="350" height="180" fill="#fff2cc" stroke="#ffc107" stroke-width="2" rx="10"/>
+    <text x="225" y="370" text-anchor="middle" font-size="16" font-weight="bold">AI/LLM RAG System</text>
+    
+    <rect x="80" y="390" width="100" height="40" fill="#fff3e0" stroke="#f57c00" rx="5"/>
+    <text x="130" y="410" text-anchor="middle" font-size="11">LLM RAG Service</text>
+    
+    <rect x="200" y="390" width="70" height="30" fill="#fff3e0" stroke="#f57c00" rx="5"/>
+    <text x="235" y="400" text-anchor="middle" font-size="10">Query</text>
+    <text x="235" y="412" text-anchor="middle" font-size="10">Processing</text>
+    
+    <rect x="290" y="390" width="70" height="30" fill="#fff3e0" stroke="#f57c00" rx="5"/>
+    <text x="325" y="400" text-anchor="middle" font-size="10">Vector</text>
+    <text x="325" y="412" text-anchor="middle" font-size="10">Search</text>
+    
+    <rect x="200" y="440" width="70" height="30" fill="#fff3e0" stroke="#f57c00" rx="5"/>
+    <text x="235" y="450" text-anchor="middle" font-size="10">Answer</text>
+    <text x="235" y="462" text-anchor="middle" font-size="10">Generation</text>
+    
+    <rect x="290" y="440" width="70" height="30" fill="#fff3e0" stroke="#f57c00" rx="5"/>
+    <text x="325" y="450" text-anchor="middle" font-size="10">Product</text>
+    <text x="325" y="462" text-anchor="middle" font-size="10">Recommendation</text>
+    
+    <rect x="80" y="480" width="120" height="30" fill="#fff3e0" stroke="#f57c00" rx="5"/>
+    <text x="140" y="500" text-anchor="middle" font-size="11">Knowledge Base</text>
+  </g>
+  
+  <!-- 修正後的連線 -->
+  <!-- 1. ChatWidget 到 API Gateway -->
+  <line x1="200" y1="215" x2="500" y2="180" stroke="#2196F3" stroke-width="3" marker-end="url(#arrowblue)"/>
+  <text x="350" y="190" text-anchor="middle" font-size="10" fill="#2196F3">User Query</text>
+  
+  <!-- 2. API Gateway 到 Backend Chatbot -->
+  <line x1="650" y1="180" x2="780" y2="270" stroke="#4CAF50" stroke-width="3" marker-end="url(#arrowgreen)"/>
+  <text x="715" y="220" text-anchor="middle" font-size="10" fill="#4CAF50">API Call</text>
+  
+  <!-- 3. Backend Chatbot 到 AI System -->
+  <line x1="780" y1="270" x2="400" y2="410" stroke="#FF9800" stroke-width="3" marker-end="url(#arroworange)"/>
+  <text x="590" y="340" text-anchor="middle" font-size="10" fill="#FF9800">AI Processing</text>
+  
+  <!-- 4. Backend 到 Database -->
+  <line x1="950" y1="360" x2="875" y2="420" stroke="#9C27B0" stroke-width="3" marker-end="url(#arrowpurple)"/>
+  <text x="920" y="395" text-anchor="middle" font-size="10" fill="#9C27B0">SQL Query</text>
+  
+  <!-- 5. Database 回 Backend -->
+  <line x1="845" y1="420" x2="920" y2="360" stroke="#9C27B0" stroke-width="3" marker-end="url(#arrowpurple)" stroke-dasharray="5,5"/>
+  <text x="890" y="380" text-anchor="middle" font-size="10" fill="#9C27B0">Data</text>
+  
+  <!-- 6. AI System 回 Backend -->
+  <line x1="400" y1="440" x2="780" y2="280" stroke="#FF9800" stroke-width="3" marker-end="url(#arroworange)" stroke-dasharray="5,5"/>
+  <text x="590" y="360" text-anchor="middle" font-size="10" fill="#FF9800">AI Response</text>
+  
+  <!-- 7. Backend 回 API Gateway -->
+  <line x1="780" y1="280" x2="650" y2="190" stroke="#4CAF50" stroke-width="3" marker-end="url(#arrowgreen)" stroke-dasharray="5,5"/>
+  <text x="715" y="240" text-anchor="middle" font-size="10" fill="#4CAF50">Response</text>
+  
+  <!-- 8. API Gateway 回 Frontend -->
+  <line x1="500" y1="190" x2="200" y2="225" stroke="#2196F3" stroke-width="3" marker-end="url(#arrowblue)" stroke-dasharray="5,5"/>
+  <text x="350" y="210" text-anchor="middle" font-size="10" fill="#2196F3">JSON Response</text>
+  
+  <!-- Data Flow Legend -->
+  <g id="legend">
+    <rect x="50" y="750" width="500" height="120" fill="#f5f5f5" stroke="#ccc" stroke-width="1" rx="5"/>
+    <text x="300" y="770" text-anchor="middle" font-size="14" font-weight="bold">Data Flow Explanation</text>
+    
+    <line x1="70" y1="790" x2="120" y2="790" stroke="#2196F3" stroke-width="3" marker-end="url(#arrowblue)"/>
+    <text x="130" y="795" font-size="12">1. User inputs query in frontend ChatWidget</text>
+    
+    <line x1="70" y1="810" x2="120" y2="810" stroke="#4CAF50" stroke-width="3" marker-end="url(#arrowgreen)"/>
+    <text x="130" y="815" font-size="12">2. API Gateway routes request to backend chatbot app</text>
+    
+    <line x1="70" y1="830" x2="120" y2="830" stroke="#FF9800" stroke-width="3" marker-end="url(#arroworange)"/>
+    <text x="130" y="835" font-size="12">3. Backend calls AI system for intelligent processing</text>
+    
+    <line x1="70" y1="850" x2="120" y2="850" stroke="#9C27B0" stroke-width="3" marker-end="url(#arrowpurple)"/>
+    <text x="130" y="855" font-size="12">4. Query database for relevant data and return results</text>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowblue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3"/>
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50"/>
+    </marker>
+    <marker id="arroworange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF9800"/>
+    </marker>
+    <marker id="arrowpurple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9C27B0"/>
+    </marker>
+  </defs>
+</svg>
