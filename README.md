@@ -276,51 +276,6 @@ TRAVELTRIP_PROJECT/
    docker-compose up --build
    ```
 
-4. **訪問應用程式**
-   - 前端：http://localhost:3000
-   - 後端 API：http://localhost:8000
-   - 管理面板：http://localhost:8000/admin
-
-### 本地開發環境設定
-
-#### 後端設定
-
-1. **建立虛擬環境**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Windows: venv\Scripts\activate
-   ```
-
-2. **安裝依賴**
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   ```
-
-3. **資料庫設定**
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-   python manage.py createsuperuser
-   ```
-
-4. **啟動 Django 伺服器**
-   ```bash
-   python manage.py runserver
-   ```
-
-#### 前端設定
-
-1. **安裝依賴**
-   ```bash
-   cd frontend
-   npm install
-   ```
-
-2. **啟動開發伺服器**
-   ```bash
-   npm start
-   ```
 
 ## 📋 API 文件
 
